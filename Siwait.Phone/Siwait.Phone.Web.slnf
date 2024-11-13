@@ -1,0 +1,13 @@
+{
+  "solution": {
+    "path": "Siwait.Phone.sln",
+    "projects": [
+      "src\\Client\\Siwait.Phone.Client.Core\\Siwait.Phone.Client.Core.csproj",
+      "src\\Client\\Siwait.Phone.Client.Web\\Siwait.Phone.Client.Web.csproj",
+      "src\\Server\\Siwait.Phone.Server.Api\\Siwait.Phone.Server.Api.csproj",
+      "src\\Server\\Siwait.Phone.Server.Web\\Siwait.Phone.Server.Web.csproj",
+      "src\\Shared\\Siwait.Phone.Shared.csproj",
+      "src\\Tests\\Siwait.Phone.Tests.csproj"
+    ]
+  }
+}

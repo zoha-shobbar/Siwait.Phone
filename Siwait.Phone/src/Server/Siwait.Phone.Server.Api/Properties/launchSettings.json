@@ -1,0 +1,53 @@
+{
+    "profiles": {
+        "Siwait.Phone.Server.Api": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "launchUrl": "swagger",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "dotnetRunMessages": true,
+            "applicationUrl": "http://localhost:5045"
+        },
+        "WSL": {
+            "commandName": "WSL2",
+            "launchBrowser": true,
+            "launchUrl": "http://localhost:5045/swagger",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5045"
+            }
+        },
+        "Docker": {
+            "commandName": "SdkContainer",
+            "launchBrowser": true,
+            "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+            "DockerfileRunArguments": "-v C:\\DockerVolumes\\8F9102BC-977E-4F36-BE50-C391D1D80141:/container_volume",
+            "environmentVariables": {
+                "ASPNETCORE_HTTP_PORTS": "5045",
+                "ConnectionStrings__SqliteConnectionString": "Data Source=/container_volume/App_Data/Siwait.PhoneDb.db;"
+            },
+            "publishAllPorts": true,
+            "useSSL": false,
+            "httpPort": 5045
+        },
+        "IIS Express": {
+            "commandName": "IISExpress",
+            "launchBrowser": true,
+            "launchUrl": "swagger",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        }
+    },
+    "iisSettings": {
+        "windowsAuthentication": false,
+        "anonymousAuthentication": true,
+        "iisExpress": {
+            "applicationUrl": "http://localhost:57278/",
+            "httpPort": 5045
+        }
+    },
+    "$schema": "http://json.schemastore.org/launchsettings.json"
+}
