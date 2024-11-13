@@ -43,6 +43,10 @@
     <Link rel="stylesheet" href="_content/Siwait.Phone.Client.Core/styles/app.css" />
     <Link rel="stylesheet" href="Siwait.Phone.Server.Web.styles.css" />
 
+    <Link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <Link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+
+
     @if (renderMode != null && (serverWebSettings.WebAppRender.PrerenderEnabled is false || noPrerender))
     {
         <LoadingComponent />
@@ -79,6 +83,9 @@
         <Script src="_content/Bit.BlazorUI/scripts/bit.blazorui.js"></Script>
         <Script src="_content/Siwait.Phone.Client.Core/scripts/app.js"></Script>
         <Script src="_content/Bit.BlazorUI.Extras/scripts/bit.blazorui.extras.js"></Script>
+
+        <Script src="_content/MudBlazor/MudBlazor.min.js"></Script>
+
     }
 </body>
 

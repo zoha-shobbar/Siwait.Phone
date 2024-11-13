@@ -3,6 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components.WebAssembly.Services;
 using Siwait.Phone.Client.Core.Components;
 using Siwait.Phone.Client.Core.Services.HttpMessageHandlers;
+using MudBlazor.Services;
 
 namespace Microsoft.Extensions.DependencyInjection;
 
@@ -69,6 +70,7 @@ public static partial class IClientCoreServiceCollectionExtensions
 
 
         services.AddTypedHttpClients();
+        services.AddMudServices();
 
         return services;
     }
